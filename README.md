@@ -1,2 +1,4 @@
 # firstSite
-My first HTML/CSS website ever 
+My first website ever
+Plain HTML and CSS, no javascript
+

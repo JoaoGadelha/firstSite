@@ -1,5 +1,2 @@
-# firstSite
-My first website ever </br>
-Plain HTML and CSS, no javascript </br>
-https://joaoricardotg-acmehost.netlify.app
-
+# responsive_html5
+First project on implementing a HTML5 site that is responsive

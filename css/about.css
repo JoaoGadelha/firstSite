@@ -1,0 +1,230 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    border-bottom: #e8491d 6px solid;
+    height: 13vh;
+}
+
+header .container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+header .container>* {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+header .container ul {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header li {
+    list-style-type: none;
+    font-size: 13px;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 70fr 5fr 25fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.about .about-us {
+    margin-bottom: 20px;
+}
+
+.about .about-us p{
+    margin-top: 10px;
+}
+
+.about .what-we-do {
+    height: 300px;
+    grid-column: 3/4;
+    background: #e8491d;
+    color: white;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.about .what-we-do p {
+    margin-top: 10px;
+}
+
+.about .about-us-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background: #35424a;
+    color: white;
+    padding: 20px;
+}
+
+
+.footer {
+    background: #e8491d;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+    margin-top: 20px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ************************************************************************ */
+
+@media (max-width:1024px) {
+    header {
+        height: 18vh;
+    }
+    header .container {
+        grid-template-columns: 1fr;
+    }
+    header .container #branding h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    header .container ul {
+        width: 80%;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about .what-we-do {
+        padding: 30px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .about .about-us-2 {
+        grid-column: 1/4;
+    }
+
+
+.footer {
+    background: #e8491d;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    position: static;
+}
+}
+
+@media (max-width:600px) {
+    .about {
+        display: block;
+    }
+
+    .about-us-2 {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .about .what-we-do {
+        margin: 0 auto;
+        width: 250px;
+    }
+}
+
+@media (max-width:280px) {
+    header {
+    height:120px;
+    }
+
+    header .container  #branding  h1 {
+        font-size: 25px;
+    }
+}
